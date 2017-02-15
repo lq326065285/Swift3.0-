@@ -8,12 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		D515C05E1E485151000F4EE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D515C05D1E485151000F4EE9 /* AppDelegate.swift */; };
-		D515C0601E485151000F4EE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D515C05F1E485151000F4EE9 /* ViewController.swift */; };
 		D515C0631E485151000F4EE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D515C0611E485151000F4EE9 /* Main.storyboard */; };
 		D515C0651E485151000F4EE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D515C0641E485151000F4EE9 /* Assets.xcassets */; };
 		D515C0681E485151000F4EE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D515C0661E485151000F4EE9 /* LaunchScreen.storyboard */; };
 		D515C0731E485151000F4EE9 /* ____Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D515C0721E485151000F4EE9 /* ____Tests.swift */; };
 		D515C07E1E485151000F4EE9 /* ____UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D515C07D1E485151000F4EE9 /* ____UITests.swift */; };
+		D515C0961E4852CE000F4EE9 /* LQTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D515C0951E4852CE000F4EE9 /* LQTabBarController.swift */; };
+		D515C0981E4852F7000F4EE9 /* LQNavigtionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D515C0971E4852F7000F4EE9 /* LQNavigtionController.swift */; };
+		D515C09E1E4854DB000F4EE9 /* LQBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D515C09D1E4854DB000F4EE9 /* LQBaseViewController.swift */; };
+		D515C0A01E485500000F4EE9 /* LQDiscoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D515C09F1E485500000F4EE9 /* LQDiscoverController.swift */; };
+		D515C0A21E48551F000F4EE9 /* LQHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D515C0A11E48551F000F4EE9 /* LQHomeController.swift */; };
+		D515C0A41E48552F000F4EE9 /* LQMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D515C0A31E48552F000F4EE9 /* LQMessageController.swift */; };
+		D515C0A61E48554C000F4EE9 /* LQMineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D515C0A51E48554C000F4EE9 /* LQMineController.swift */; };
+		D51781ED1E53034900AA1BA6 /* LQStudentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51781EC1E53034900AA1BA6 /* LQStudentModel.swift */; };
+		D51781F01E53F8D700AA1BA6 /* LQVisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51781EF1E53F8D700AA1BA6 /* LQVisitorView.swift */; };
+		D51781F21E53FE5A00AA1BA6 /* UIScreen.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51781F11E53FE5A00AA1BA6 /* UIScreen.extension.swift */; };
+		D51782181E5426CC00AA1BA6 /* UIButton+createFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D517820F1E5426CC00AA1BA6 /* UIButton+createFactory.m */; };
+		D51782191E5426CC00AA1BA6 /* UILabel+CreateFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D51782111E5426CC00AA1BA6 /* UILabel+CreateFactory.m */; };
+		D517821A1E5426CC00AA1BA6 /* UITextField+CreateFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D51782131E5426CC00AA1BA6 /* UITextField+CreateFactory.m */; };
+		D517821B1E5426CC00AA1BA6 /* UITextView+CreateFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D51782151E5426CC00AA1BA6 /* UITextView+CreateFactory.m */; };
+		D517821C1E5426CC00AA1BA6 /* UIView+createFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D51782171E5426CC00AA1BA6 /* UIView+createFactory.m */; };
+		D517821E1E5435BD00AA1BA6 /* View.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D517821D1E5435BD00AA1BA6 /* View.extension.swift */; };
+		D5490D461E5141AB001801A8 /* Bundle.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5490D451E5141AB001801A8 /* Bundle.extension.swift */; };
+		D5490D481E52A114001801A8 /* LQTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5490D471E52A114001801A8 /* LQTestViewController.swift */; };
+		D5524AB71E54447500CF723D /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = D5524AB61E54447500CF723D /* main.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +54,6 @@
 /* Begin PBXFileReference section */
 		D515C05A1E485151000F4EE9 /* 新建项目.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "新建项目.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D515C05D1E485151000F4EE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D515C05F1E485151000F4EE9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D515C0621E485151000F4EE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D515C0641E485151000F4EE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D515C0671E485151000F4EE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +64,31 @@
 		D515C0791E485151000F4EE9 /* 新建项目UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "新建项目UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D515C07D1E485151000F4EE9 /* ____UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "____UITests.swift"; sourceTree = "<group>"; };
 		D515C07F1E485151000F4EE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D515C0951E4852CE000F4EE9 /* LQTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LQTabBarController.swift; sourceTree = "<group>"; };
+		D515C0971E4852F7000F4EE9 /* LQNavigtionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LQNavigtionController.swift; sourceTree = "<group>"; };
+		D515C09D1E4854DB000F4EE9 /* LQBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LQBaseViewController.swift; sourceTree = "<group>"; };
+		D515C09F1E485500000F4EE9 /* LQDiscoverController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LQDiscoverController.swift; sourceTree = "<group>"; };
+		D515C0A11E48551F000F4EE9 /* LQHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LQHomeController.swift; sourceTree = "<group>"; };
+		D515C0A31E48552F000F4EE9 /* LQMessageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LQMessageController.swift; sourceTree = "<group>"; };
+		D515C0A51E48554C000F4EE9 /* LQMineController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LQMineController.swift; sourceTree = "<group>"; };
+		D51781EC1E53034900AA1BA6 /* LQStudentModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LQStudentModel.swift; sourceTree = "<group>"; };
+		D51781EF1E53F8D700AA1BA6 /* LQVisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LQVisitorView.swift; sourceTree = "<group>"; };
+		D51781F11E53FE5A00AA1BA6 /* UIScreen.extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScreen.extension.swift; sourceTree = "<group>"; };
+		D51782091E5426BF00AA1BA6 /* 新建项目-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "新建项目-Bridging-Header.h"; sourceTree = "<group>"; };
+		D517820E1E5426CC00AA1BA6 /* UIButton+createFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+createFactory.h"; sourceTree = "<group>"; };
+		D517820F1E5426CC00AA1BA6 /* UIButton+createFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+createFactory.m"; sourceTree = "<group>"; };
+		D51782101E5426CC00AA1BA6 /* UILabel+CreateFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+CreateFactory.h"; sourceTree = "<group>"; };
+		D51782111E5426CC00AA1BA6 /* UILabel+CreateFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+CreateFactory.m"; sourceTree = "<group>"; };
+		D51782121E5426CC00AA1BA6 /* UITextField+CreateFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+CreateFactory.h"; sourceTree = "<group>"; };
+		D51782131E5426CC00AA1BA6 /* UITextField+CreateFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+CreateFactory.m"; sourceTree = "<group>"; };
+		D51782141E5426CC00AA1BA6 /* UITextView+CreateFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+CreateFactory.h"; sourceTree = "<group>"; };
+		D51782151E5426CC00AA1BA6 /* UITextView+CreateFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+CreateFactory.m"; sourceTree = "<group>"; };
+		D51782161E5426CC00AA1BA6 /* UIView+createFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+createFactory.h"; sourceTree = "<group>"; };
+		D51782171E5426CC00AA1BA6 /* UIView+createFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+createFactory.m"; sourceTree = "<group>"; };
+		D517821D1E5435BD00AA1BA6 /* View.extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.extension.swift; sourceTree = "<group>"; };
+		D5490D451E5141AB001801A8 /* Bundle.extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bundle.extension.swift; sourceTree = "<group>"; };
+		D5490D471E52A114001801A8 /* LQTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LQTestViewController.swift; sourceTree = "<group>"; };
+		D5524AB61E54447500CF723D /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +139,8 @@
 		D515C05C1E485151000F4EE9 /* 新建项目 */ = {
 			isa = PBXGroup;
 			children = (
+				D515C0911E48529F000F4EE9 /* Main */,
 				D515C05D1E485151000F4EE9 /* AppDelegate.swift */,
-				D515C05F1E485151000F4EE9 /* ViewController.swift */,
 				D515C0611E485151000F4EE9 /* Main.storyboard */,
 				D515C0641E485151000F4EE9 /* Assets.xcassets */,
 				D515C0661E485151000F4EE9 /* LaunchScreen.storyboard */,
@@ -123,6 +165,134 @@
 				D515C07F1E485151000F4EE9 /* Info.plist */,
 			);
 			path = "新建项目UITests";
+			sourceTree = "<group>";
+		};
+		D515C0911E48529F000F4EE9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D5524AB51E54446E00CF723D /* Resouce */,
+				D515C09D1E4854DB000F4EE9 /* LQBaseViewController.swift */,
+				D515C0951E4852CE000F4EE9 /* LQTabBarController.swift */,
+				D515C0971E4852F7000F4EE9 /* LQNavigtionController.swift */,
+				D515C0921E48529F000F4EE9 /* Common */,
+				D515C0931E48529F000F4EE9 /* Super */,
+				D515C0941E48529F000F4EE9 /* VC */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D515C0921E48529F000F4EE9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D5490D441E514194001801A8 /* extension */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		D515C0931E48529F000F4EE9 /* Super */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Super;
+			sourceTree = "<group>";
+		};
+		D515C0941E48529F000F4EE9 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				D51781EE1E53E85000AA1BA6 /* visitor */,
+				D515C09A1E4854B4000F4EE9 /* home */,
+				D515C09B1E4854B4000F4EE9 /* message */,
+				D515C0991E4854B4000F4EE9 /* discover */,
+				D515C09C1E4854B4000F4EE9 /* mine */,
+				D5490D471E52A114001801A8 /* LQTestViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		D515C0991E4854B4000F4EE9 /* discover */ = {
+			isa = PBXGroup;
+			children = (
+				D515C09F1E485500000F4EE9 /* LQDiscoverController.swift */,
+			);
+			path = discover;
+			sourceTree = "<group>";
+		};
+		D515C09A1E4854B4000F4EE9 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				D51781EB1E53032F00AA1BA6 /* Model */,
+				D515C0A11E48551F000F4EE9 /* LQHomeController.swift */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		D515C09B1E4854B4000F4EE9 /* message */ = {
+			isa = PBXGroup;
+			children = (
+				D515C0A31E48552F000F4EE9 /* LQMessageController.swift */,
+			);
+			path = message;
+			sourceTree = "<group>";
+		};
+		D515C09C1E4854B4000F4EE9 /* mine */ = {
+			isa = PBXGroup;
+			children = (
+				D515C0A51E48554C000F4EE9 /* LQMineController.swift */,
+			);
+			path = mine;
+			sourceTree = "<group>";
+		};
+		D51781EB1E53032F00AA1BA6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D51781EC1E53034900AA1BA6 /* LQStudentModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D51781EE1E53E85000AA1BA6 /* visitor */ = {
+			isa = PBXGroup;
+			children = (
+				D51781EF1E53F8D700AA1BA6 /* LQVisitorView.swift */,
+			);
+			path = visitor;
+			sourceTree = "<group>";
+		};
+		D517820D1E5426CC00AA1BA6 /* Addition */ = {
+			isa = PBXGroup;
+			children = (
+				D517820E1E5426CC00AA1BA6 /* UIButton+createFactory.h */,
+				D517820F1E5426CC00AA1BA6 /* UIButton+createFactory.m */,
+				D51782101E5426CC00AA1BA6 /* UILabel+CreateFactory.h */,
+				D51782111E5426CC00AA1BA6 /* UILabel+CreateFactory.m */,
+				D51782121E5426CC00AA1BA6 /* UITextField+CreateFactory.h */,
+				D51782131E5426CC00AA1BA6 /* UITextField+CreateFactory.m */,
+				D51782141E5426CC00AA1BA6 /* UITextView+CreateFactory.h */,
+				D51782151E5426CC00AA1BA6 /* UITextView+CreateFactory.m */,
+				D51782161E5426CC00AA1BA6 /* UIView+createFactory.h */,
+				D51782171E5426CC00AA1BA6 /* UIView+createFactory.m */,
+			);
+			path = Addition;
+			sourceTree = "<group>";
+		};
+		D5490D441E514194001801A8 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				D517820D1E5426CC00AA1BA6 /* Addition */,
+				D5490D451E5141AB001801A8 /* Bundle.extension.swift */,
+				D51781F11E53FE5A00AA1BA6 /* UIScreen.extension.swift */,
+				D517821D1E5435BD00AA1BA6 /* View.extension.swift */,
+				D51782091E5426BF00AA1BA6 /* 新建项目-Bridging-Header.h */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		D5524AB51E54446E00CF723D /* Resouce */ = {
+			isa = PBXGroup;
+			children = (
+				D5524AB61E54447500CF723D /* main.json */,
+			);
+			path = Resouce;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,12 +357,14 @@
 		D515C0521E485151000F4EE9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LQ;
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "李强";
 				TargetAttributes = {
 					D515C0591E485151000F4EE9 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					D515C06D1E485151000F4EE9 = {
@@ -234,6 +406,7 @@
 			files = (
 				D515C0681E485151000F4EE9 /* LaunchScreen.storyboard in Resources */,
 				D515C0651E485151000F4EE9 /* Assets.xcassets in Resources */,
+				D5524AB71E54447500CF723D /* main.json in Resources */,
 				D515C0631E485151000F4EE9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,8 +432,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D515C0601E485151000F4EE9 /* ViewController.swift in Sources */,
+				D51782191E5426CC00AA1BA6 /* UILabel+CreateFactory.m in Sources */,
+				D51782181E5426CC00AA1BA6 /* UIButton+createFactory.m in Sources */,
+				D515C09E1E4854DB000F4EE9 /* LQBaseViewController.swift in Sources */,
+				D515C0A21E48551F000F4EE9 /* LQHomeController.swift in Sources */,
+				D517821A1E5426CC00AA1BA6 /* UITextField+CreateFactory.m in Sources */,
+				D51781ED1E53034900AA1BA6 /* LQStudentModel.swift in Sources */,
+				D515C0A01E485500000F4EE9 /* LQDiscoverController.swift in Sources */,
+				D515C0A61E48554C000F4EE9 /* LQMineController.swift in Sources */,
 				D515C05E1E485151000F4EE9 /* AppDelegate.swift in Sources */,
+				D517821C1E5426CC00AA1BA6 /* UIView+createFactory.m in Sources */,
+				D51781F01E53F8D700AA1BA6 /* LQVisitorView.swift in Sources */,
+				D5490D481E52A114001801A8 /* LQTestViewController.swift in Sources */,
+				D517821E1E5435BD00AA1BA6 /* View.extension.swift in Sources */,
+				D515C0961E4852CE000F4EE9 /* LQTabBarController.swift in Sources */,
+				D515C0A41E48552F000F4EE9 /* LQMessageController.swift in Sources */,
+				D517821B1E5426CC00AA1BA6 /* UITextView+CreateFactory.m in Sources */,
+				D51781F21E53FE5A00AA1BA6 /* UIScreen.extension.swift in Sources */,
+				D5490D461E5141AB001801A8 /* Bundle.extension.swift in Sources */,
+				D515C0981E4852F7000F4EE9 /* LQNavigtionController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,10 +602,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "新建项目/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "text.----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "新建项目/Main/Common/extension/新建项目-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -424,10 +617,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "新建项目/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "text.----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "新建项目/Main/Common/extension/新建项目-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -505,6 +700,7 @@
 				D515C0841E485151000F4EE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D515C0851E485151000F4EE9 /* Build configuration list for PBXNativeTarget "新建项目Tests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +709,7 @@
 				D515C0871E485151000F4EE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D515C0881E485151000F4EE9 /* Build configuration list for PBXNativeTarget "新建项目UITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +718,7 @@
 				D515C08A1E485151000F4EE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
