@@ -21,16 +21,26 @@ class LQTabBarController: UITabBarController {
 
 extension LQTabBarController{
     func setRootViewController(){
+        /*
         let arr = [
                 ["title":"首页","className":"LQHomeController","image":"home","message":"这是首页，这是首页，这是首页，这是首页，这是首页，这是首页，这是首页，这是首页，这是首页"],
                 ["title":"消息","className":"LQMessageController","image":"message","message":"这是消息页，这是消息页，这是消息页，这是消息页，这是消息页，这是消息页，这是消息页，这是消息页"],
                 ["title":"发现","className":"LQDiscoverController","image":"discover","message":"这是发现页，这是发现页，这是发现页，这是发现页，这是发现页，这是发现页"],
                 ["title":"我的","className":"LQMineController","image":"mine","message":"这是个人中心页，这是个人中心页，这是个人中心页，这是个人中心页，这是个人中心页，这是个人中心页，这是个人中心页"],
         ]
+        let data = try? JSONSerialization.data(withJSONObject: arr, options: .prettyPrinted)
+        try? data?.write(to: NSURL.fileURL(withPath: "/Users/liqiang/Desktop/main.json"), options: [])
+        */
         
-//        let date = try? JSONSerialization.data(withJSONObject: arr, options: .prettyPrinted)
-//        try? date?.write(to: NSURL.fileURL(withPath: "/Users/liqiang/Desktop/main.json"), options: [])
-        
+        //实现配置文件json化    以实现动态布局
+        /*
+         *此处可以现在在网络上请求，如果没有最新的就用本地main.json 如果有最新的就覆盖本地的main.json实现动态布局
+         */
+        let path:String? = Bundle.main.path(forResource: "main", ofType: "json")
+        let data = NSData.init(contentsOfFile: path!) as? Data
+        guard let arr = try? JSONSerialization.jsonObject(with: data!, options: []) as! [[String:String]] else {
+            return
+        }
         var arrChild = [LQNavigtionController]();
         for dict in arr {
             arrChild.append(setViewController(dict: dict))
