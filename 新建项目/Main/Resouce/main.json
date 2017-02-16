@@ -11,6 +11,9 @@
     "message" : "这是消息页，这是消息页，这是消息页，这是消息页，这是消息页，这是消息页，这是消息页，这是消息页",
     "image" : "message"
   },
+ {
+    "className" : "UIViewController",
+ },
   {
     "title" : "发现",
     "className" : "LQDiscoverController",

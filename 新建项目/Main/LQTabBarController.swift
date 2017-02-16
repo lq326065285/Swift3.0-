@@ -10,10 +10,18 @@ import UIKit
 
 class LQTabBarController: UITabBarController {
 
+    let addButton = UIButton()
     override func viewDidLoad() {
         super.viewDidLoad()
-      setRootViewController();
-        
+        setRootViewController();
+        setAddButton()
+    }
+    
+    func setAddButton()  {
+        addButton.backgroundColor = UIColor.orange
+        tabBar.addSubview(addButton);
+        let width = tabBar.width / 5.0
+        addButton.frame = tabBar.bounds.insetBy(dx: width * 2 - 3, dy: -10);
     }
 
 }

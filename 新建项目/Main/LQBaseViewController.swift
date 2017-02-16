@@ -8,13 +8,13 @@
 
 import UIKit
 
-class LQBaseViewController: UIViewController {
+class LQBaseViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     //自定义naviItem
     let navItem = UINavigationItem();
     var myMessage:String = ""
     let navigationBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height:64))
-    private let isLogin = true
+    private let isLogin = false
     
     private lazy var tableView = UITableView(frame: CGRect(x:0, y: 64, width: UIScreen.width, height: UIScreen.height - 64), style: .plain)
     var name: String?{
@@ -57,6 +57,8 @@ class LQBaseViewController: UIViewController {
     func setupTableView()  {
         print("1111")
         view.insertSubview(tableView, belowSubview: navigationBar)
+        tableView.delegate = self
+        tableView.dataSource = self
     }
     
     

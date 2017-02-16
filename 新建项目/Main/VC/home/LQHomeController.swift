@@ -10,10 +10,15 @@ import UIKit
 
 class LQHomeController: LQBaseViewController {
 
+    var arrData = [String]()
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        for i in 0...20 {
+            arrData.append("这是第\(i)行")
+        }
+        
         _ = LQStudentModel().getProperties()
         LQStudentModel().getIvars()
         LQStudentModel().getMethodList()
@@ -37,4 +42,19 @@ class LQHomeController: LQBaseViewController {
     }
 
 
+}
+
+extension LQHomeController{
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return arrData.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCell(withIdentifier: "cellTest")
+        if cell == nil {
+            cell = UITableViewCell(style: .default, reuseIdentifier: "cellTest")
+        }
+        cell?.textLabel?.text = arrData[indexPath.row]
+        return cell!
+    }
 }
