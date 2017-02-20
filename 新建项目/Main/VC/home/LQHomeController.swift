@@ -22,13 +22,11 @@ class LQHomeController: LQBaseViewController {
         _ = LQStudentModel().getProperties()
         LQStudentModel().getIvars()
         LQStudentModel().getMethodList()
+        
+        print(LQHttpSessionManager.share())
+//        LQHttpSessionManager.share().request(<#T##URLString: String##String#>, parameters: <#T##[String : AnyObject]?#>, method: <#T##LQRequestMethod#>, completionHandle: <#T##((Bool, Any?) -> Void)?##((Bool, Any?) -> Void)?##(Bool, Any?) -> Void#>)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     override func setupTableView() {
         super.setupTableView()
         self.navItem.rightBarButtonItem = UIBarButtonItem(title: "测试", style: .plain, target: self, action: #selector(clickRight))

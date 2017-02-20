@@ -14,7 +14,9 @@ class LQBaseViewController: UIViewController,UITableViewDelegate,UITableViewData
     let navItem = UINavigationItem();
     var myMessage:String = ""
     let navigationBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height:64))
-    private let isLogin = false
+    
+    /// false==显示访客视图    true==显示视图
+    private let isLogin = true
     
     private lazy var tableView = UITableView(frame: CGRect(x:0, y: 64, width: UIScreen.width, height: UIScreen.height - 64), style: .plain)
     var name: String?{
@@ -38,8 +40,6 @@ class LQBaseViewController: UIViewController,UITableViewDelegate,UITableViewData
     }
     
     private func setupUI() {
-//        let rightItem = UIBarButtonItem(title: "测试", style: .done, target: self, action: #selector(clickRight))
-//        navItem.rightBarButtonItem = rightItem
         navItem.leftBarButtonItem = UIBarButtonItem(title: "注册", style: .done, target: self, action: #selector(clickRegister))
         navItem.rightBarButtonItem = UIBarButtonItem(title: "登录", style: .done, target: self, action: #selector(clickLogin))
        

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58B30A4425694AF632155EF4 /* Pods_____.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A2E0966E8E2F4DC30863D1 /* Pods_____.framework */; };
 		D515C05E1E485151000F4EE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D515C05D1E485151000F4EE9 /* AppDelegate.swift */; };
 		D515C0631E485151000F4EE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D515C0611E485151000F4EE9 /* Main.storyboard */; };
 		D515C0651E485151000F4EE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D515C0641E485151000F4EE9 /* Assets.xcassets */; };
@@ -22,17 +23,18 @@
 		D515C0A61E48554C000F4EE9 /* LQMineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D515C0A51E48554C000F4EE9 /* LQMineController.swift */; };
 		D51781ED1E53034900AA1BA6 /* LQStudentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51781EC1E53034900AA1BA6 /* LQStudentModel.swift */; };
 		D51781F01E53F8D700AA1BA6 /* LQVisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51781EF1E53F8D700AA1BA6 /* LQVisitorView.swift */; };
-		D51781F21E53FE5A00AA1BA6 /* UIScreen+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51781F11E53FE5A00AA1BA6 /* UIScreen+extension.swift */; };
-		D51782181E5426CC00AA1BA6 /* UIButton+createFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D517820F1E5426CC00AA1BA6 /* UIButton+createFactory.m */; };
-		D51782191E5426CC00AA1BA6 /* UILabel+CreateFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D51782111E5426CC00AA1BA6 /* UILabel+CreateFactory.m */; };
-		D517821A1E5426CC00AA1BA6 /* UITextField+CreateFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D51782131E5426CC00AA1BA6 /* UITextField+CreateFactory.m */; };
-		D517821B1E5426CC00AA1BA6 /* UITextView+CreateFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D51782151E5426CC00AA1BA6 /* UITextView+CreateFactory.m */; };
-		D517821C1E5426CC00AA1BA6 /* UIView+createFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D51782171E5426CC00AA1BA6 /* UIView+createFactory.m */; };
-		D517821E1E5435BD00AA1BA6 /* View+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D517821D1E5435BD00AA1BA6 /* View+extension.swift */; };
-		D5490D461E5141AB001801A8 /* Bundle+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5490D451E5141AB001801A8 /* Bundle+extension.swift */; };
+		D52AB53A1E56FCAA008144AC /* UIButton+createFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D52AB5291E56FCAA008144AC /* UIButton+createFactory.m */; };
+		D52AB53B1E56FCAA008144AC /* UILabel+CreateFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D52AB52B1E56FCAA008144AC /* UILabel+CreateFactory.m */; };
+		D52AB53C1E56FCAA008144AC /* UITextField+CreateFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D52AB52D1E56FCAA008144AC /* UITextField+CreateFactory.m */; };
+		D52AB53D1E56FCAA008144AC /* UITextView+CreateFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D52AB52F1E56FCAA008144AC /* UITextView+CreateFactory.m */; };
+		D52AB53E1E56FCAA008144AC /* UIView+createFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D52AB5311E56FCAA008144AC /* UIView+createFactory.m */; };
+		D52AB53F1E56FCAA008144AC /* Bundle+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52AB5321E56FCAA008144AC /* Bundle+extension.swift */; };
+		D52AB5401E56FCAA008144AC /* LQBaseViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52AB5331E56FCAA008144AC /* LQBaseViewController+extension.swift */; };
+		D52AB5411E56FCAA008144AC /* UIScreen+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52AB5341E56FCAA008144AC /* UIScreen+extension.swift */; };
+		D52AB5421E56FCAA008144AC /* View+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52AB5351E56FCAA008144AC /* View+extension.swift */; };
+		D52AB5431E56FCAA008144AC /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = D52AB5381E56FCAA008144AC /* main.json */; };
 		D5490D481E52A114001801A8 /* LQTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5490D471E52A114001801A8 /* LQTestViewController.swift */; };
-		D5524AB71E54447500CF723D /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = D5524AB61E54447500CF723D /* main.json */; };
-		D5524AB91E554F2C00CF723D /* LQBaseViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5524AB81E554F2C00CF723D /* LQBaseViewController+extension.swift */; };
+		D5DDFA131E5A79A90097CE46 /* LQHttpSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DDFA121E5A79A90097CE46 /* LQHttpSessionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5551DF701A2677B3015262F2 /* Pods-新建项目.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-新建项目.release.xcconfig"; path = "Pods/Target Support Files/Pods-新建项目/Pods-新建项目.release.xcconfig"; sourceTree = "<group>"; };
+		665CC8A46B42E36813E7C7B4 /* Pods-新建项目.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-新建项目.debug.xcconfig"; path = "Pods/Target Support Files/Pods-新建项目/Pods-新建项目.debug.xcconfig"; sourceTree = "<group>"; };
+		D4A2E0966E8E2F4DC30863D1 /* Pods_____.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_____.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D515C05A1E485151000F4EE9 /* 新建项目.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "新建项目.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D515C05D1E485151000F4EE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D515C0621E485151000F4EE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -74,23 +79,24 @@
 		D515C0A51E48554C000F4EE9 /* LQMineController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LQMineController.swift; sourceTree = "<group>"; };
 		D51781EC1E53034900AA1BA6 /* LQStudentModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LQStudentModel.swift; sourceTree = "<group>"; };
 		D51781EF1E53F8D700AA1BA6 /* LQVisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LQVisitorView.swift; sourceTree = "<group>"; };
-		D51781F11E53FE5A00AA1BA6 /* UIScreen+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+extension.swift"; sourceTree = "<group>"; };
-		D51782091E5426BF00AA1BA6 /* 新建项目-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "新建项目-Bridging-Header.h"; sourceTree = "<group>"; };
-		D517820E1E5426CC00AA1BA6 /* UIButton+createFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+createFactory.h"; sourceTree = "<group>"; };
-		D517820F1E5426CC00AA1BA6 /* UIButton+createFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+createFactory.m"; sourceTree = "<group>"; };
-		D51782101E5426CC00AA1BA6 /* UILabel+CreateFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+CreateFactory.h"; sourceTree = "<group>"; };
-		D51782111E5426CC00AA1BA6 /* UILabel+CreateFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+CreateFactory.m"; sourceTree = "<group>"; };
-		D51782121E5426CC00AA1BA6 /* UITextField+CreateFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+CreateFactory.h"; sourceTree = "<group>"; };
-		D51782131E5426CC00AA1BA6 /* UITextField+CreateFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+CreateFactory.m"; sourceTree = "<group>"; };
-		D51782141E5426CC00AA1BA6 /* UITextView+CreateFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+CreateFactory.h"; sourceTree = "<group>"; };
-		D51782151E5426CC00AA1BA6 /* UITextView+CreateFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+CreateFactory.m"; sourceTree = "<group>"; };
-		D51782161E5426CC00AA1BA6 /* UIView+createFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+createFactory.h"; sourceTree = "<group>"; };
-		D51782171E5426CC00AA1BA6 /* UIView+createFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+createFactory.m"; sourceTree = "<group>"; };
-		D517821D1E5435BD00AA1BA6 /* View+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+extension.swift"; sourceTree = "<group>"; };
-		D5490D451E5141AB001801A8 /* Bundle+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+extension.swift"; sourceTree = "<group>"; };
+		D52AB5281E56FCAA008144AC /* UIButton+createFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+createFactory.h"; sourceTree = "<group>"; };
+		D52AB5291E56FCAA008144AC /* UIButton+createFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+createFactory.m"; sourceTree = "<group>"; };
+		D52AB52A1E56FCAA008144AC /* UILabel+CreateFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+CreateFactory.h"; sourceTree = "<group>"; };
+		D52AB52B1E56FCAA008144AC /* UILabel+CreateFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+CreateFactory.m"; sourceTree = "<group>"; };
+		D52AB52C1E56FCAA008144AC /* UITextField+CreateFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+CreateFactory.h"; sourceTree = "<group>"; };
+		D52AB52D1E56FCAA008144AC /* UITextField+CreateFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+CreateFactory.m"; sourceTree = "<group>"; };
+		D52AB52E1E56FCAA008144AC /* UITextView+CreateFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+CreateFactory.h"; sourceTree = "<group>"; };
+		D52AB52F1E56FCAA008144AC /* UITextView+CreateFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+CreateFactory.m"; sourceTree = "<group>"; };
+		D52AB5301E56FCAA008144AC /* UIView+createFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+createFactory.h"; sourceTree = "<group>"; };
+		D52AB5311E56FCAA008144AC /* UIView+createFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+createFactory.m"; sourceTree = "<group>"; };
+		D52AB5321E56FCAA008144AC /* Bundle+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+extension.swift"; sourceTree = "<group>"; };
+		D52AB5331E56FCAA008144AC /* LQBaseViewController+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LQBaseViewController+extension.swift"; sourceTree = "<group>"; };
+		D52AB5341E56FCAA008144AC /* UIScreen+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+extension.swift"; sourceTree = "<group>"; };
+		D52AB5351E56FCAA008144AC /* View+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+extension.swift"; sourceTree = "<group>"; };
+		D52AB5361E56FCAA008144AC /* 新建项目-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "新建项目-Bridging-Header.h"; sourceTree = "<group>"; };
+		D52AB5381E56FCAA008144AC /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
 		D5490D471E52A114001801A8 /* LQTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LQTestViewController.swift; sourceTree = "<group>"; };
-		D5524AB61E54447500CF723D /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
-		D5524AB81E554F2C00CF723D /* LQBaseViewController+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LQBaseViewController+extension.swift"; sourceTree = "<group>"; };
+		D5DDFA121E5A79A90097CE46 /* LQHttpSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LQHttpSessionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58B30A4425694AF632155EF4 /* Pods_____.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +125,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		555F03576B41AC31B9C97119 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4A2E0966E8E2F4DC30863D1 /* Pods_____.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC09E2386777C24B41FECC71 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				665CC8A46B42E36813E7C7B4 /* Pods-新建项目.debug.xcconfig */,
+				5551DF701A2677B3015262F2 /* Pods-新建项目.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D515C0511E485151000F4EE9 = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +149,8 @@
 				D515C0711E485151000F4EE9 /* 新建项目Tests */,
 				D515C07C1E485151000F4EE9 /* 新建项目UITests */,
 				D515C05B1E485151000F4EE9 /* Products */,
+				CC09E2386777C24B41FECC71 /* Pods */,
+				555F03576B41AC31B9C97119 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,6 +167,9 @@
 		D515C05C1E485151000F4EE9 /* 新建项目 */ = {
 			isa = PBXGroup;
 			children = (
+				D52AB5251E56FCAA008144AC /* Common */,
+				D52AB5371E56FCAA008144AC /* Resouce */,
+				D52AB5391E56FCAA008144AC /* Super */,
 				D515C0911E48529F000F4EE9 /* Main */,
 				D515C05D1E485151000F4EE9 /* AppDelegate.swift */,
 				D515C0611E485151000F4EE9 /* Main.storyboard */,
@@ -172,30 +201,12 @@
 		D515C0911E48529F000F4EE9 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				D5524AB51E54446E00CF723D /* Resouce */,
 				D515C09D1E4854DB000F4EE9 /* LQBaseViewController.swift */,
 				D515C0951E4852CE000F4EE9 /* LQTabBarController.swift */,
 				D515C0971E4852F7000F4EE9 /* LQNavigtionController.swift */,
-				D515C0921E48529F000F4EE9 /* Common */,
-				D515C0931E48529F000F4EE9 /* Super */,
 				D515C0941E48529F000F4EE9 /* VC */,
 			);
 			path = Main;
-			sourceTree = "<group>";
-		};
-		D515C0921E48529F000F4EE9 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				D5490D441E514194001801A8 /* extension */,
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
-		D515C0931E48529F000F4EE9 /* Super */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Super;
 			sourceTree = "<group>";
 		};
 		D515C0941E48529F000F4EE9 /* VC */ = {
@@ -260,42 +271,66 @@
 			path = visitor;
 			sourceTree = "<group>";
 		};
-		D517820D1E5426CC00AA1BA6 /* Addition */ = {
+		D52AB5251E56FCAA008144AC /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				D517820E1E5426CC00AA1BA6 /* UIButton+createFactory.h */,
-				D517820F1E5426CC00AA1BA6 /* UIButton+createFactory.m */,
-				D51782101E5426CC00AA1BA6 /* UILabel+CreateFactory.h */,
-				D51782111E5426CC00AA1BA6 /* UILabel+CreateFactory.m */,
-				D51782121E5426CC00AA1BA6 /* UITextField+CreateFactory.h */,
-				D51782131E5426CC00AA1BA6 /* UITextField+CreateFactory.m */,
-				D51782141E5426CC00AA1BA6 /* UITextView+CreateFactory.h */,
-				D51782151E5426CC00AA1BA6 /* UITextView+CreateFactory.m */,
-				D51782161E5426CC00AA1BA6 /* UIView+createFactory.h */,
-				D51782171E5426CC00AA1BA6 /* UIView+createFactory.m */,
+				D5DDFA111E5A790C0097CE46 /* network */,
+				D52AB5261E56FCAA008144AC /* extension */,
 			);
-			path = Addition;
+			path = Common;
 			sourceTree = "<group>";
 		};
-		D5490D441E514194001801A8 /* extension */ = {
+		D52AB5261E56FCAA008144AC /* extension */ = {
 			isa = PBXGroup;
 			children = (
-				D517820D1E5426CC00AA1BA6 /* Addition */,
-				D5490D451E5141AB001801A8 /* Bundle+extension.swift */,
-				D51781F11E53FE5A00AA1BA6 /* UIScreen+extension.swift */,
-				D517821D1E5435BD00AA1BA6 /* View+extension.swift */,
-				D51782091E5426BF00AA1BA6 /* 新建项目-Bridging-Header.h */,
-				D5524AB81E554F2C00CF723D /* LQBaseViewController+extension.swift */,
+				D52AB5271E56FCAA008144AC /* Addition */,
+				D52AB5321E56FCAA008144AC /* Bundle+extension.swift */,
+				D52AB5331E56FCAA008144AC /* LQBaseViewController+extension.swift */,
+				D52AB5341E56FCAA008144AC /* UIScreen+extension.swift */,
+				D52AB5351E56FCAA008144AC /* View+extension.swift */,
+				D52AB5361E56FCAA008144AC /* 新建项目-Bridging-Header.h */,
 			);
 			path = extension;
 			sourceTree = "<group>";
 		};
-		D5524AB51E54446E00CF723D /* Resouce */ = {
+		D52AB5271E56FCAA008144AC /* Addition */ = {
 			isa = PBXGroup;
 			children = (
-				D5524AB61E54447500CF723D /* main.json */,
+				D52AB5281E56FCAA008144AC /* UIButton+createFactory.h */,
+				D52AB5291E56FCAA008144AC /* UIButton+createFactory.m */,
+				D52AB52A1E56FCAA008144AC /* UILabel+CreateFactory.h */,
+				D52AB52B1E56FCAA008144AC /* UILabel+CreateFactory.m */,
+				D52AB52C1E56FCAA008144AC /* UITextField+CreateFactory.h */,
+				D52AB52D1E56FCAA008144AC /* UITextField+CreateFactory.m */,
+				D52AB52E1E56FCAA008144AC /* UITextView+CreateFactory.h */,
+				D52AB52F1E56FCAA008144AC /* UITextView+CreateFactory.m */,
+				D52AB5301E56FCAA008144AC /* UIView+createFactory.h */,
+				D52AB5311E56FCAA008144AC /* UIView+createFactory.m */,
+			);
+			path = Addition;
+			sourceTree = "<group>";
+		};
+		D52AB5371E56FCAA008144AC /* Resouce */ = {
+			isa = PBXGroup;
+			children = (
+				D52AB5381E56FCAA008144AC /* main.json */,
 			);
 			path = Resouce;
+			sourceTree = "<group>";
+		};
+		D52AB5391E56FCAA008144AC /* Super */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Super;
+			sourceTree = "<group>";
+		};
+		D5DDFA111E5A790C0097CE46 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				D5DDFA121E5A79A90097CE46 /* LQHttpSessionManager.swift */,
+			);
+			path = network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,9 +340,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D515C0821E485151000F4EE9 /* Build configuration list for PBXNativeTarget "新建项目" */;
 			buildPhases = (
+				6AC69ADFD7F8F514791CC7E6 /* [CP] Check Pods Manifest.lock */,
 				D515C0561E485151000F4EE9 /* Sources */,
 				D515C0571E485151000F4EE9 /* Frameworks */,
 				D515C0581E485151000F4EE9 /* Resources */,
+				6A3C6DDB6D746F399177DECC /* [CP] Embed Pods Frameworks */,
+				D1118A17E0C60EFB0CA8A154 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -409,7 +447,7 @@
 			files = (
 				D515C0681E485151000F4EE9 /* LaunchScreen.storyboard in Resources */,
 				D515C0651E485151000F4EE9 /* Assets.xcassets in Resources */,
-				D5524AB71E54447500CF723D /* main.json in Resources */,
+				D52AB5431E56FCAA008144AC /* main.json in Resources */,
 				D515C0631E485151000F4EE9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,30 +468,79 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6A3C6DDB6D746F399177DECC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-新建项目/Pods-新建项目-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6AC69ADFD7F8F514791CC7E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D1118A17E0C60EFB0CA8A154 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-新建项目/Pods-新建项目-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D515C0561E485151000F4EE9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D51782191E5426CC00AA1BA6 /* UILabel+CreateFactory.m in Sources */,
-				D51782181E5426CC00AA1BA6 /* UIButton+createFactory.m in Sources */,
 				D515C09E1E4854DB000F4EE9 /* LQBaseViewController.swift in Sources */,
+				D52AB53E1E56FCAA008144AC /* UIView+createFactory.m in Sources */,
 				D515C0A21E48551F000F4EE9 /* LQHomeController.swift in Sources */,
-				D517821A1E5426CC00AA1BA6 /* UITextField+CreateFactory.m in Sources */,
 				D51781ED1E53034900AA1BA6 /* LQStudentModel.swift in Sources */,
 				D515C0A01E485500000F4EE9 /* LQDiscoverController.swift in Sources */,
+				D52AB53A1E56FCAA008144AC /* UIButton+createFactory.m in Sources */,
 				D515C0A61E48554C000F4EE9 /* LQMineController.swift in Sources */,
 				D515C05E1E485151000F4EE9 /* AppDelegate.swift in Sources */,
-				D517821C1E5426CC00AA1BA6 /* UIView+createFactory.m in Sources */,
 				D51781F01E53F8D700AA1BA6 /* LQVisitorView.swift in Sources */,
 				D5490D481E52A114001801A8 /* LQTestViewController.swift in Sources */,
-				D517821E1E5435BD00AA1BA6 /* View+extension.swift in Sources */,
+				D52AB5421E56FCAA008144AC /* View+extension.swift in Sources */,
+				D52AB53D1E56FCAA008144AC /* UITextView+CreateFactory.m in Sources */,
 				D515C0961E4852CE000F4EE9 /* LQTabBarController.swift in Sources */,
-				D5524AB91E554F2C00CF723D /* LQBaseViewController+extension.swift in Sources */,
+				D52AB5401E56FCAA008144AC /* LQBaseViewController+extension.swift in Sources */,
+				D52AB53C1E56FCAA008144AC /* UITextField+CreateFactory.m in Sources */,
 				D515C0A41E48552F000F4EE9 /* LQMessageController.swift in Sources */,
-				D517821B1E5426CC00AA1BA6 /* UITextView+CreateFactory.m in Sources */,
-				D51781F21E53FE5A00AA1BA6 /* UIScreen+extension.swift in Sources */,
-				D5490D461E5141AB001801A8 /* Bundle+extension.swift in Sources */,
+				D52AB53F1E56FCAA008144AC /* Bundle+extension.swift in Sources */,
+				D52AB5411E56FCAA008144AC /* UIScreen+extension.swift in Sources */,
+				D5DDFA131E5A79A90097CE46 /* LQHttpSessionManager.swift in Sources */,
+				D52AB53B1E56FCAA008144AC /* UILabel+CreateFactory.m in Sources */,
 				D515C0981E4852F7000F4EE9 /* LQNavigtionController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -604,6 +691,7 @@
 		};
 		D515C0831E485151000F4EE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 665CC8A46B42E36813E7C7B4 /* Pods-新建项目.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -611,7 +699,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "text.----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "新建项目/Main/Common/extension/新建项目-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "新建项目/Common/extension/新建项目-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -619,6 +707,7 @@
 		};
 		D515C0841E485151000F4EE9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5551DF701A2677B3015262F2 /* Pods-新建项目.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -626,7 +715,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "text.----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "新建项目/Main/Common/extension/新建项目-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "新建项目/Common/extension/新建项目-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
