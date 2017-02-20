@@ -35,6 +35,7 @@
 		D52AB5431E56FCAA008144AC /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = D52AB5381E56FCAA008144AC /* main.json */; };
 		D5490D481E52A114001801A8 /* LQTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5490D471E52A114001801A8 /* LQTestViewController.swift */; };
 		D5DDFA131E5A79A90097CE46 /* LQHttpSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DDFA121E5A79A90097CE46 /* LQHttpSessionManager.swift */; };
+		D5DDFA151E5A91B20097CE46 /* LQHttpSessionManager+requestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DDFA141E5A91B20097CE46 /* LQHttpSessionManager+requestMethod.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		D52AB5381E56FCAA008144AC /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
 		D5490D471E52A114001801A8 /* LQTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LQTestViewController.swift; sourceTree = "<group>"; };
 		D5DDFA121E5A79A90097CE46 /* LQHttpSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LQHttpSessionManager.swift; sourceTree = "<group>"; };
+		D5DDFA141E5A91B20097CE46 /* LQHttpSessionManager+requestMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LQHttpSessionManager+requestMethod.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -329,6 +331,7 @@
 			isa = PBXGroup;
 			children = (
 				D5DDFA121E5A79A90097CE46 /* LQHttpSessionManager.swift */,
+				D5DDFA141E5A91B20097CE46 /* LQHttpSessionManager+requestMethod.swift */,
 			);
 			path = network;
 			sourceTree = "<group>";
@@ -537,6 +540,7 @@
 				D52AB5401E56FCAA008144AC /* LQBaseViewController+extension.swift in Sources */,
 				D52AB53C1E56FCAA008144AC /* UITextField+CreateFactory.m in Sources */,
 				D515C0A41E48552F000F4EE9 /* LQMessageController.swift in Sources */,
+				D5DDFA151E5A91B20097CE46 /* LQHttpSessionManager+requestMethod.swift in Sources */,
 				D52AB53F1E56FCAA008144AC /* Bundle+extension.swift in Sources */,
 				D52AB5411E56FCAA008144AC /* UIScreen+extension.swift in Sources */,
 				D5DDFA131E5A79A90097CE46 /* LQHttpSessionManager.swift in Sources */,
