@@ -7,24 +7,23 @@
 //
 
 import UIKit
-
+import SnapKit
+import YYKit
 class LQHomeController: LQBaseViewController {
 
-    var arrData = [String]()
+    var viewModel:LQHomeViewModel = LQHomeViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        for i in 0...20 {
-            arrData.append("这是第\(i)行")
-        }
-        
+        //关于运行时测试
         _ = LQStudentModel().getProperties()
         LQStudentModel().getIvars()
         LQStudentModel().getMethodList()
         
-        print(LQHttpSessionManager.share())
-//        LQHttpSessionManager.share().request(<#T##URLString: String##String#>, parameters: <#T##[String : AnyObject]?#>, method: <#T##LQRequestMethod#>, completionHandle: <#T##((Bool, Any?) -> Void)?##((Bool, Any?) -> Void)?##(Bool, Any?) -> Void#>)
+        //请求数据
+        viewModel.request(isHeaderRefresh: true) {[weak self] in
+            self?.tableView.reloadData()
+        }
     }
 
     override func setupTableView() {
@@ -43,16 +42,39 @@ class LQHomeController: LQBaseViewController {
 }
 
 extension LQHomeController{
+    
+    override func headerRefresh() {
+        self.viewModel.dataArr.removeAll()
+        viewModel.request(isHeaderRefresh: true) { [weak self] in
+            self?.tableView.reloadData()
+            self?.tableView.mj_header.endRefreshing()
+        }
+    }
+    
+    override func footerRefresh() {
+        viewModel.request(isHeaderRefresh: false) { [weak self] in
+            self?.tableView.reloadData()
+            self?.tableView.mj_footer.endRefreshing()
+        }
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return arrData.count
+//        return arrData.count
+        return viewModel.dataArr.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCell(withIdentifier: "cellTest")
         if cell == nil {
-            cell = UITableViewCell(style: .default, reuseIdentifier: "cellTest")
+            cell = UITableViewCell(style: .subtitle, reuseIdentifier: "cellTest")
         }
-        cell?.textLabel?.text = arrData[indexPath.row]
+        let model = viewModel.dataArr[indexPath.row] as? LQWeiboListModel
+        cell?.textLabel?.text = model?.text
+        cell?.detailTextLabel?.text = model?.created_at
         return cell!
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60
     }
 }

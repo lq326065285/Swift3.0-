@@ -35,7 +35,10 @@
 		D52AB5431E56FCAA008144AC /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = D52AB5381E56FCAA008144AC /* main.json */; };
 		D5490D481E52A114001801A8 /* LQTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5490D471E52A114001801A8 /* LQTestViewController.swift */; };
 		D5DDFA131E5A79A90097CE46 /* LQHttpSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DDFA121E5A79A90097CE46 /* LQHttpSessionManager.swift */; };
-		D5DDFA151E5A91B20097CE46 /* LQHttpSessionManager+requestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DDFA141E5A91B20097CE46 /* LQHttpSessionManager+requestMethod.swift */; };
+		D5DDFA151E5A91B20097CE46 /* LQHttpSessionManager+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DDFA141E5A91B20097CE46 /* LQHttpSessionManager+extension.swift */; };
+		D5DDFA1B1E5AE1930097CE46 /* LQMineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DDFA1A1E5AE1930097CE46 /* LQMineTableViewCell.swift */; };
+		D5DDFA1D1E5BED3B0097CE46 /* LQWeiboListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DDFA1C1E5BED3B0097CE46 /* LQWeiboListModel.swift */; };
+		D5DDFA201E5C0B3E0097CE46 /* LQHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DDFA1F1E5C0B3E0097CE46 /* LQHomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,7 +101,10 @@
 		D52AB5381E56FCAA008144AC /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
 		D5490D471E52A114001801A8 /* LQTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LQTestViewController.swift; sourceTree = "<group>"; };
 		D5DDFA121E5A79A90097CE46 /* LQHttpSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LQHttpSessionManager.swift; sourceTree = "<group>"; };
-		D5DDFA141E5A91B20097CE46 /* LQHttpSessionManager+requestMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LQHttpSessionManager+requestMethod.swift"; sourceTree = "<group>"; };
+		D5DDFA141E5A91B20097CE46 /* LQHttpSessionManager+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LQHttpSessionManager+extension.swift"; sourceTree = "<group>"; };
+		D5DDFA1A1E5AE1930097CE46 /* LQMineTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LQMineTableViewCell.swift; sourceTree = "<group>"; };
+		D5DDFA1C1E5BED3B0097CE46 /* LQWeiboListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LQWeiboListModel.swift; sourceTree = "<group>"; };
+		D5DDFA1F1E5C0B3E0097CE46 /* LQHomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LQHomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +241,7 @@
 		D515C09A1E4854B4000F4EE9 /* home */ = {
 			isa = PBXGroup;
 			children = (
+				D5DDFA1E1E5C0B280097CE46 /* ViewModel */,
 				D51781EB1E53032F00AA1BA6 /* Model */,
 				D515C0A11E48551F000F4EE9 /* LQHomeController.swift */,
 			);
@@ -253,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				D515C0A51E48554C000F4EE9 /* LQMineController.swift */,
+				D5DDFA1A1E5AE1930097CE46 /* LQMineTableViewCell.swift */,
 			);
 			path = mine;
 			sourceTree = "<group>";
@@ -261,6 +269,7 @@
 			isa = PBXGroup;
 			children = (
 				D51781EC1E53034900AA1BA6 /* LQStudentModel.swift */,
+				D5DDFA1C1E5BED3B0097CE46 /* LQWeiboListModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -331,9 +340,17 @@
 			isa = PBXGroup;
 			children = (
 				D5DDFA121E5A79A90097CE46 /* LQHttpSessionManager.swift */,
-				D5DDFA141E5A91B20097CE46 /* LQHttpSessionManager+requestMethod.swift */,
+				D5DDFA141E5A91B20097CE46 /* LQHttpSessionManager+extension.swift */,
 			);
 			path = network;
+			sourceTree = "<group>";
+		};
+		D5DDFA1E1E5C0B280097CE46 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D5DDFA1F1E5C0B3E0097CE46 /* LQHomeViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -525,22 +542,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				D515C09E1E4854DB000F4EE9 /* LQBaseViewController.swift in Sources */,
+				D5DDFA1D1E5BED3B0097CE46 /* LQWeiboListModel.swift in Sources */,
 				D52AB53E1E56FCAA008144AC /* UIView+createFactory.m in Sources */,
 				D515C0A21E48551F000F4EE9 /* LQHomeController.swift in Sources */,
 				D51781ED1E53034900AA1BA6 /* LQStudentModel.swift in Sources */,
 				D515C0A01E485500000F4EE9 /* LQDiscoverController.swift in Sources */,
 				D52AB53A1E56FCAA008144AC /* UIButton+createFactory.m in Sources */,
+				D5DDFA1B1E5AE1930097CE46 /* LQMineTableViewCell.swift in Sources */,
 				D515C0A61E48554C000F4EE9 /* LQMineController.swift in Sources */,
 				D515C05E1E485151000F4EE9 /* AppDelegate.swift in Sources */,
 				D51781F01E53F8D700AA1BA6 /* LQVisitorView.swift in Sources */,
 				D5490D481E52A114001801A8 /* LQTestViewController.swift in Sources */,
 				D52AB5421E56FCAA008144AC /* View+extension.swift in Sources */,
+				D5DDFA201E5C0B3E0097CE46 /* LQHomeViewModel.swift in Sources */,
 				D52AB53D1E56FCAA008144AC /* UITextView+CreateFactory.m in Sources */,
 				D515C0961E4852CE000F4EE9 /* LQTabBarController.swift in Sources */,
 				D52AB5401E56FCAA008144AC /* LQBaseViewController+extension.swift in Sources */,
 				D52AB53C1E56FCAA008144AC /* UITextField+CreateFactory.m in Sources */,
 				D515C0A41E48552F000F4EE9 /* LQMessageController.swift in Sources */,
-				D5DDFA151E5A91B20097CE46 /* LQHttpSessionManager+requestMethod.swift in Sources */,
+				D5DDFA151E5A91B20097CE46 /* LQHttpSessionManager+extension.swift in Sources */,
 				D52AB53F1E56FCAA008144AC /* Bundle+extension.swift in Sources */,
 				D52AB5411E56FCAA008144AC /* UIScreen+extension.swift in Sources */,
 				D5DDFA131E5A79A90097CE46 /* LQHttpSessionManager.swift in Sources */,

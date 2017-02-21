@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import MJRefresh
 class LQBaseViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     //自定义naviItem
@@ -18,7 +18,7 @@ class LQBaseViewController: UIViewController,UITableViewDelegate,UITableViewData
     /// false==显示访客视图    true==显示视图
     private let isLogin = true
     
-    private lazy var tableView = UITableView(frame: CGRect(x:0, y: 64, width: UIScreen.width, height: UIScreen.height - 64), style: .plain)
+    var tableView = UITableView(frame: CGRect(x:0, y: 64, width: UIScreen.width, height: UIScreen.height - 64), style: .plain)
     var name: String?{
         didSet(name){
             navItem.title = title
@@ -55,10 +55,12 @@ class LQBaseViewController: UIViewController,UITableViewDelegate,UITableViewData
     }
     
     func setupTableView()  {
+        view.insertSubview(UIView(), belowSubview: navigationBar)
         print("1111")
         view.insertSubview(tableView, belowSubview: navigationBar)
         tableView.delegate = self
         tableView.dataSource = self
+        addTableViewRefresh()
     }
     
     
@@ -78,5 +80,22 @@ class LQBaseViewController: UIViewController,UITableViewDelegate,UITableViewData
 
 
 extension LQBaseViewController{
-   
+    func addTableViewRefresh() {
+        tableView.mj_header = MJRefreshNormalHeader(refreshingBlock: { [weak self] in
+            self?.headerRefresh()
+        })
+        
+        tableView.mj_footer = MJRefreshAutoNormalFooter(refreshingBlock: {
+            self.footerRefresh()
+        })
+    }
+    
+    func headerRefresh() {
+        tableView.mj_header.endRefreshing()
+    }
+    
+    func footerRefresh() {
+        tableView.mj_header.endRefreshing()
+    }
+    
 }

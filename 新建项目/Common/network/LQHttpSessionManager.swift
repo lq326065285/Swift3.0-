@@ -16,7 +16,7 @@ enum LQRequestMethod {
 
 class LQHttpSessionManager: AFHTTPSessionManager {
     
-    var access_key:String? = ""
+    var access_token:String? = "2.00z6eIQEJMIF9Ce3b785355dwgQ6fE"
     
    static let m = LQHttpSessionManager()
     class func share() -> LQHttpSessionManager {
@@ -35,7 +35,7 @@ class LQHttpSessionManager: AFHTTPSessionManager {
     ///   - completionHandle: 回调
     func dealWithAccessToken(_ URLString: String, parameters: [String:AnyObject]?, method:LQRequestMethod,completionHandle:((Bool,Any?)->Void)?) {
         
-        if access_key == nil {
+        if access_token == nil {
             if completionHandle != nil {
                 completionHandle!(false,"请重新登录")
             }
@@ -46,7 +46,8 @@ class LQHttpSessionManager: AFHTTPSessionManager {
         if parameters == nil{
             parameters = [String:AnyObject]()
         }
-       parameters?["access_key"] = access_key as AnyObject
+       parameters?["access_token"] = access_token as AnyObject
+        request(URLString, parameters: parameters, method: method, completionHandle: completionHandle)
     }
     
     /// 封装get和post方法
