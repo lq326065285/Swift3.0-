@@ -21,13 +21,13 @@ extension UIView{
         }
     }
     
-    var height:CGFloat{
+    var lq_height:CGFloat{
         get{
             return frame.size.height
         }
     }
     
-    var width:CGFloat{
+    var lq_width:CGFloat{
         get{
             return frame.size.width
         }

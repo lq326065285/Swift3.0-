@@ -26,13 +26,21 @@ class LQNavigtionController: UINavigationController {
             if viewControllers.count > 1{
                 navTitle = "上一页"
             }
-            myViewController.navItem.leftBarButtonItem = UIBarButtonItem(title: navTitle, style: .done, target: self, action: #selector(clickGoBack))
+            
+            
+//            myViewController.navItem.leftBarButtonItem = UIBarButtonItem(title: navTitle, style: .done, target: self, action: #selector(clickGoBack))
+            let leftButton:UIButton = UIButton()
+            leftButton.setImage(UIImage(named: "left_back"), for: .normal)
+            leftButton.setTitle("返回", for: .normal)
+            leftButton.contentHorizontalAlignment = .left
+            leftButton.frame = CGRect(x: 0, y: 0, width: 100, height: 40)
+            myViewController.navItem.leftBarButtonItem = UIBarButtonItem(customView: leftButton)
         }
         
         super.pushViewController(viewController, animated: animated)
     }
 
-    func clickGoBack() {
+    @objc func clickGoBack() {
         popViewController(animated: true)
     }
 }

@@ -16,7 +16,7 @@ class LQBaseViewController: UIViewController,UITableViewDelegate,UITableViewData
     let navigationBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height:64))
     
     /// false==显示访客视图    true==显示视图
-    private let isLogin = true
+    private var isLogin = false
     
     var tableView = UITableView(frame: CGRect(x:0, y: 64, width: UIScreen.width, height: UIScreen.height - 64), style: .plain)
     var name: String?{
@@ -50,7 +50,7 @@ class LQBaseViewController: UIViewController,UITableViewDelegate,UITableViewData
         visitorView.loginButton.addTarget(self, action: #selector(clickLogin), for: .touchUpInside)
         visitorView.reigisterButton.addTarget(self, action: #selector(clickRegister), for: .touchUpInside)
         
-        view.backgroundColor = UIColor.darkGray
+        view.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         
     }
     
@@ -73,6 +73,10 @@ class LQBaseViewController: UIViewController,UITableViewDelegate,UITableViewData
     
     @objc func clickLogin() {
         print("登录")
+        let loginVC = LQLoginViewController()
+        //登录界面不存在未登录状态了
+        loginVC.isLogin = true
+        navigationController?.pushViewController(loginVC, animated: true)
     }
     
 

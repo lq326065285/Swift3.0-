@@ -18,6 +18,10 @@
     textField.font = [UIFont systemFontOfSize:font];
     textField.keyboardType = type;
     textField.clearButtonMode = UITextFieldViewModeWhileEditing;
+    textField.layer.cornerRadius = 3;
+    textField.layer.masksToBounds = YES;
+    textField.layer.borderColor = [UIColor colorWithRed:120 / 255.0 green:120 / 255.0 blue:120 / 255.0 alpha:1].CGColor;
+    textField.layer.borderWidth = .5;
     return textField;
 }
 

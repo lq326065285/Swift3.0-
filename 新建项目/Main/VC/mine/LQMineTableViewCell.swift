@@ -14,7 +14,7 @@ class LQMineTableViewCell: UITableViewCell {
     
     let titleLabel:UILabel = UILabel.lq_label(withFrame: CGRect(x: 0, y: 0, width: 0, height: 0), title: "测试title", font: 15, textColor: UIColor.black, textAlignment: .left)
     
-    let subtitleLabel:UILabel = UILabel.lq_label(withFrame: CGRect(x: 0, y: 0, width: 0, height: 0), title: "测试内容内容内容容内容内容容内容内容容内容内容容内容内容", font: 15, textColor: UIColor.black, textAlignment: .left)
+    let subtitleLabel:UILabel = UILabel.lq_label(withFrame: CGRect(x: 0, y: 0, width: 0, height: 0), title: "测试内容内容内容容内容内容容内容内容容内容内容容内容内容内容内容容内容内容内容内容容内容内容内容内容容内容内容内容内容容内容内容内容内容容内容内容", font: 15, textColor: UIColor.black, textAlignment: .left)
 
     let backView = UIView()
     
@@ -34,24 +34,34 @@ class LQMineTableViewCell: UITableViewCell {
         }
        
         imgHead.snp.updateConstraints {[weak self] (ConstraintMaker) in
+            guard let strongSelf = self else {
+                return
+            }
             ConstraintMaker.left.equalTo(10)
             ConstraintMaker.width.height.equalTo(100)
-            ConstraintMaker.centerY.equalTo((self?.backView.snp.centerY)!)
-            ConstraintMaker.bottom.equalTo((self?.backView.snp.bottom)!).offset(-10)
+            ConstraintMaker.centerY.equalTo(strongSelf.backView.snp.centerY)
+            ConstraintMaker.bottom.lessThanOrEqualTo(strongSelf.backView.snp.bottom).offset(-10).priority(751)
         }
         
         titleLabel.preferredMaxLayoutWidth = UIScreen.width - 10 - 10 - 100 - 10
         titleLabel.snp.updateConstraints {[weak self] (ConstraintMaker) in
+            guard let strongSelf = self else {
+                return
+            }
             ConstraintMaker.top.equalTo(10)
-            ConstraintMaker.left.equalTo((self?.imgHead.snp.right)!).offset(10)
-            ConstraintMaker.right.equalTo((self?.backView.snp.right)!).offset(-10)
+            ConstraintMaker.left.equalTo(strongSelf.imgHead.snp.right).offset(10)
+            ConstraintMaker.right.equalTo(strongSelf.backView.snp.right).offset(-10)
         }
         
         subtitleLabel.preferredMaxLayoutWidth = UIScreen.width - 10 - 10 - 100 - 10
         subtitleLabel.snp.updateConstraints {[weak self] (ConstraintMaker) in
-            ConstraintMaker.top.equalTo((self?.titleLabel.snp.bottom)!).offset(10)
-            ConstraintMaker.left.equalTo((self?.imgHead.snp.right)!).offset(10)
-            ConstraintMaker.right.equalTo((self?.backView.snp.right)!).offset(-10)
+            guard let strongSelf = self else {
+                return
+            }
+            ConstraintMaker.top.equalTo(strongSelf.titleLabel.snp.bottom).offset(10)
+            ConstraintMaker.left.equalTo(strongSelf.imgHead.snp.right).offset(10)
+            ConstraintMaker.right.equalTo(strongSelf.backView.snp.right).offset(-10)
+            ConstraintMaker.bottom.equalTo(strongSelf.backView.snp.bottom).offset(-10)
         }
         
         backView.snp.updateConstraints { (ConstraintMaker) in

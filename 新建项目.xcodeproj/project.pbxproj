@@ -39,6 +39,7 @@
 		D5DDFA1B1E5AE1930097CE46 /* LQMineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DDFA1A1E5AE1930097CE46 /* LQMineTableViewCell.swift */; };
 		D5DDFA1D1E5BED3B0097CE46 /* LQWeiboListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DDFA1C1E5BED3B0097CE46 /* LQWeiboListModel.swift */; };
 		D5DDFA201E5C0B3E0097CE46 /* LQHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DDFA1F1E5C0B3E0097CE46 /* LQHomeViewModel.swift */; };
+		D5DDFA231E5C324C0097CE46 /* LQLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DDFA221E5C324C0097CE46 /* LQLoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,7 @@
 		D5DDFA1A1E5AE1930097CE46 /* LQMineTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LQMineTableViewCell.swift; sourceTree = "<group>"; };
 		D5DDFA1C1E5BED3B0097CE46 /* LQWeiboListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LQWeiboListModel.swift; sourceTree = "<group>"; };
 		D5DDFA1F1E5C0B3E0097CE46 /* LQHomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LQHomeViewModel.swift; sourceTree = "<group>"; };
+		D5DDFA221E5C324C0097CE46 /* LQLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LQLoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +222,7 @@
 		D515C0941E48529F000F4EE9 /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				D5DDFA211E5C31DD0097CE46 /* login */,
 				D51781EE1E53E85000AA1BA6 /* visitor */,
 				D515C09A1E4854B4000F4EE9 /* home */,
 				D515C09B1E4854B4000F4EE9 /* message */,
@@ -351,6 +354,14 @@
 				D5DDFA1F1E5C0B3E0097CE46 /* LQHomeViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D5DDFA211E5C31DD0097CE46 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				D5DDFA221E5C324C0097CE46 /* LQLoginViewController.swift */,
+			);
+			path = login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -548,6 +559,7 @@
 				D51781ED1E53034900AA1BA6 /* LQStudentModel.swift in Sources */,
 				D515C0A01E485500000F4EE9 /* LQDiscoverController.swift in Sources */,
 				D52AB53A1E56FCAA008144AC /* UIButton+createFactory.m in Sources */,
+				D5DDFA231E5C324C0097CE46 /* LQLoginViewController.swift in Sources */,
 				D5DDFA1B1E5AE1930097CE46 /* LQMineTableViewCell.swift in Sources */,
 				D515C0A61E48554C000F4EE9 /* LQMineController.swift in Sources */,
 				D515C05E1E485151000F4EE9 /* AppDelegate.swift in Sources */,
